@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace指向你的具体dao接口，每个增删改查操作的id都指向具体dao里面的方法-->
+<mapper namespace="bookstore.dao.BookDao">
+    <resultMap id="bookMap" type="bookstore.entity.Book">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="author" column="author"/>
+        <result property="price" column="price"/>
+        <result property="description" column="description"/>
+        <result property="category_id" column="category_id"/>
+    </resultMap>
+
+    <select id="findBookByCategoryId" resultMap="bookMap">
+        select * from book where category_id = #{id}
+    </select>
+</mapper>
