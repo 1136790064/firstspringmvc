@@ -1,0 +1,7 @@
+bookstore\service\BookService.class
+bookstore\entity\Book.class
+bookstore\test\ServiceTest.class
+bookstore\dao\BookDao.class
+bookstore\entity\Category.class
+bookstore\service\CategoryService.class
+bookstore\dao\CategoryDao.class

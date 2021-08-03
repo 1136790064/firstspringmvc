@@ -10,6 +10,7 @@ import java.util.List;
 @Repository
 @Mapper
 public interface CategoryDao {
+
     List<Category> findAll();
 }
 

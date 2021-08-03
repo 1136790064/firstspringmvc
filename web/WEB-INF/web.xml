@@ -7,7 +7,7 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <!--指定spring配置文件的位置-->
-        <param-value>classpath:mapper/applicationContext.xml</param-value>
+        <param-value>classpath:applicationContext.xml</param-value>
     </context-param>
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -19,7 +19,7 @@
         <!--加入初始化参数指定springmvc配置文件的路径-->
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:mapper/dispatcher-servlet.xml</param-value>
+            <param-value>classpath:dispatcher-servlet.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>

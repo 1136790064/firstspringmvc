@@ -16,4 +16,5 @@ import java.util.List;
 public interface BookDao {
 
     List<Book> findBookByCategoryId(@Param("id") int id);
+
 }
